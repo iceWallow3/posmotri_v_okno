@@ -135,6 +135,13 @@ ol {
 
 .content__card-link {
   text-decoration: none;
+  /* делаю ссылку блочным элементом, чтобы у выбранной карточки всегда был фон */
+  display: block;
+}
+
+/* класс для заднего фона у выбранной карточки */
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .content__card-link:hover {
@@ -144,10 +151,6 @@ ol {
 
 .content__card-link:active {
   text-decoration: none;
-}
-
-.content__card-link:focus {
-  outline: 1px solid white;
 }
 
 .content__video-card-description {
@@ -236,9 +239,8 @@ fieldset {
 }
 
 /* активный задний фон для карточки с городом */
-.content__video-card-description-container:active {
-  background-color: #545050;
-}
+/* .content__video-card-description-container:active {
+} */
 
 .search-form__checkbox {
   margin-top: 10px; /*по макету 5, но на глаз маловато  */
